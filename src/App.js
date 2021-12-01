@@ -9,6 +9,7 @@ import Signup from './Routes/Signup';
 import Askquestion from './Routes/Askquestions/Askquestion';
 import Postanswer from './Routes/Postanswer';
 import Feedback from './Routes/Feedback';
+import Layout from './Layout';
 
 
 //home page
@@ -31,21 +32,20 @@ import Feedback from './Routes/Feedback';
 
 function App() {
   return (
-    <div className="App">
-      <header>
-        <h1>header</h1>
-      </header>
+   
       <Routes>
-        <Route path="" element={<Home />} />
-        <Route path="category" element={<Category />} />
-        <Route path="login" element={<Login />} />
-        <Route path="questions" element={<Questions />} />
-        <Route path="signup" element={<Signup />} />
-        <Route path="askquestion" element={<Askquestion />} />
-        <Route path="postanswer" element={<Postanswer />} />
-        <Route path="feedback" element={<Feedback />} />
+        <Route path="" element={<Layout/>}>
+          <Route path="" element={<Home />} />
+          <Route path="category" element={<Category />} />
+          <Route path="login" element={<Login />} />
+          <Route path="questions" element={<Questions />} />
+          <Route path="signup" element={<Signup />} />
+          <Route path="askquestion" element={<Askquestion />} />
+          <Route path="postanswer" element={<Postanswer />} />
+           <Route path="feedback" element={<Feedback />} />
+        </Route>
       </Routes>
-    </div>
+    
   );
 }
 
