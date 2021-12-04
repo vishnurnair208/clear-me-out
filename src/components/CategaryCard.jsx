@@ -1,20 +1,26 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import CategoryImage from "../assets/image 1.png"
+import { useNavigate } from 'react-router-dom'
 
-const CategoryCard = () => {
+const CategoryCard = ({image,title,description}) => {
+    const navigate = useNavigate();
     return (
-        <Link to="category"> 
-        <div className="category-card">
-            <img src={CategoryImage} alt="" />
+        
+        <div className="category-card"
+            onClick={
+                ()=>{
+                    navigate("/category")
+                }
+            }>
+            <img src={image} alt="" />
             <div className="details-section">
-                <h1>Electronics</h1>
+                <h1>{title}</h1>
                 <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis numquam hic animi, nesciunt cum magni illo! Aspernatur, voluptate repellendus veritatis iusto earum quis tempora, laborum et aut dolor accusantium, omnis corporis blanditiis. Tempora maiores quas voluptates nobis aspernatur corrupti error explicabo nesciunt? Voluptatum distinctio illo pariatur qui ipsa asperiores deleniti.
+                   {description}
                 </p>
             </div>
         </div>
-        </Link>
+        
     )
 }
 

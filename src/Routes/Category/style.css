@@ -1,0 +1,64 @@
+.category-page-container{
+    margin: 20px;
+    background-color: white;
+    padding: 30px;
+}
+.page-section-category{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 500px 1fr;
+}
+.page-description{
+    padding-top: 10px;
+    margin-bottom: 0;
+    height: 100%;
+    display: grid;
+}
+.page-description p{
+    margin-top: 14px;
+}
+.key{
+    margin-top: 15px;
+    font-size: 20px;
+}
+.key-container{
+   display: flex;
+   flex-flow: row wrap;
+   gap:  15px;
+   padding: 15px 0;
+}
+button{
+    background: none;
+}
+.page-image-container,.page-image-container img{
+    width: 100%;
+}
+.key-container button{
+    padding: 4px 50px;
+    border-radius: 20px;
+}
+.comment{
+    display: flex;
+    gap: 25px;
+}
+.answer-container{
+    display: flex;
+    gap: 5px;
+}
+.pen-icon{
+    background-image: url("../../assets/Vector.svg");
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+}
+.view-icon{
+    background-image: url("../../assets/Group\ 1.png");
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.answer{
+    color: #777777;
+}
