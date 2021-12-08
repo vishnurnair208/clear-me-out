@@ -10,6 +10,7 @@ import Askquestion from './Routes/Askquestions/Askquestion';
 import Postanswer from './Routes/Postanswer';
 import Feedback from './Routes/Feedback';
 import Layout from './Layout';
+import Answers from './Routes/Answers/Answers';
 
 
 //home page
@@ -42,7 +43,8 @@ function App() {
           <Route path="signup" element={<Signup />} />
           <Route path="askquestion" element={<Askquestion />} />
           <Route path="postanswer" element={<Postanswer />} />
-           <Route path="feedback" element={<Feedback />} />
+          <Route path="feedback" element={<Feedback />} />
+          <Route path="answers" element={<Answers/>}/>
         </Route>
       </Routes>
     

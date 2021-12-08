@@ -53,3 +53,8 @@ button{
     font-size :14px;
     left: 5px;
 }
+.text-field-error-text{
+    position: absolute;
+    top: calc(100% + 5px);
+    color: red;
+}

@@ -1,9 +1,12 @@
 
-import { Outlet } from 'react-router'
+import { Outlet, useNavigate } from 'react-router'
 import { Link } from 'react-router-dom'
 import Logo from "../assets/ClearMeOut.svg"
 
 const Layout = () => {
+
+    const navigate = useNavigate();
+
     return (
         <div className="App">
          <header>
@@ -16,8 +19,12 @@ const Layout = () => {
             <div className="login">
                 <Link to="login">Login</Link>
                 </div>
-            <button className="signup">
-                <Link to="signup">SignUp</Link>
+            <button className="signup"
+                onClick={
+                    ()=>{
+                        navigate("/signup")
+                    }
+                }>SignUp
             </button>
             </div>
          </header>
